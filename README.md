@@ -4,7 +4,7 @@ Pocket6 is a smartphone application using ARKit to turn regular iPhones into spa
 
 ## Features
 
-* **6DOF hand motion + touch inputs:** Users can interact by performing 3D hand movements in 6DOF and can reliably segment and further enhance their gestures by touchscreen inputs.
+* **6DOF hand motion + touch inputs:** Users can interact by performing 3D hand movements in 6DOF (translation + rotation) and can reliably segment and further enhance their gestures by touchscreen inputs.
 
 * **Subtle gestures:** Users can perform subtle hand motions within a small control space (e.g. 16 × 9 × 16 cm). This makes the gestural interaction more comfortable since users do not need to perform large hand motions.
 
