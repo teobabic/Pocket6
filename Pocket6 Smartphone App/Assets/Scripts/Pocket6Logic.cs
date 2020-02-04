@@ -53,7 +53,7 @@ public class Pocket6Logic : MonoBehaviour
 
         float allowedOffsetBeforeRemapping = 0.01f; //1cm
 
-        // check if control space is needed
+        // check if control space remapping is required
         if ((Mathf.Abs(distanceFromControlSpaceCenter.x) > (ControlSpaceSize.x / 2) + allowedOffsetBeforeRemapping ||
                 Mathf.Abs(distanceFromControlSpaceCenter.y) > (ControlSpaceSize.y / 2) + allowedOffsetBeforeRemapping ||
                 Mathf.Abs(distanceFromControlSpaceCenter.z) > (ControlSpaceSize.z / 2) + allowedOffsetBeforeRemapping))
@@ -64,9 +64,9 @@ public class Pocket6Logic : MonoBehaviour
             RemapControlSpace();
         }
 
-        // wait until the user stops moving (e.g. walking to a different position in the room) and then remap the control space
+        // wait until the user stops moving (e.g. after walking to a different position in the room) and then remap the control space
         // using the stopwatch is optional, the code can be securely removed
-        if (stopwatchForRemapping.ElapsedMilliseconds > 1000) //dwell after remapping
+        if (stopwatchForRemapping.ElapsedMilliseconds > 1000) // dwell for 1s after remapping
         {
             if (needToBeRemapped)
             {
@@ -80,7 +80,7 @@ public class Pocket6Logic : MonoBehaviour
                 precalculationStep.z / ControlSpaceSize.z);
 
             Vector3 positionWithinControlSpace_InProcentage_FromBottomLeft = positionWithinControlSpace_InProcentageCentered + new Vector3(50, 50, 50);
-            Vector3 positionWithinControlSpace_Normalized = positionWithinControlSpace_InProcentage_FromBottomLeft / 100; //convert from 0 - 100 to 0.0 to 1.0
+            Vector3 positionWithinControlSpace_Normalized = positionWithinControlSpace_InProcentage_FromBottomLeft / 100; // normalize the values, from 0 - 100 to 0.0 - 1.0
 
             // update the network phone
             networkPhone.transform.position = positionWithinControlSpace_Normalized;
@@ -106,7 +106,7 @@ public class Pocket6Logic : MonoBehaviour
 
     private void RemapControlSpace()
     {
-        // this additional if disables control space remapping while the user is performing touch interactions (moving/rotating an object on the distant display)
+        // this temporarily disables the control space remapping while the user is performing touch interactions (moving/rotating an object on the distant display)
         if (touchDataLogic.GetTouchData().x == 0)
         {
             controlSpace.transform.position = scenePhone.transform.position;
@@ -116,7 +116,7 @@ public class Pocket6Logic : MonoBehaviour
 
     public void ForceRemapControlSpace()
     {
-        // control space remapping is forced after each client or server reconnect
+        // this forces a control space remapping - only used after each client or server reconnect
         controlSpace.transform.position = scenePhone.transform.position;
         controlSpace.transform.eulerAngles = new Vector3(0, scenePhone.transform.eulerAngles.y, 0);
     }
