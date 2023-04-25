@@ -1,8 +1,8 @@
 ﻿using System.Net;
 using System.Net.Sockets;
 using UnityEngine;
-using UnityEngine.Networking;
 using UnityEngine.UI;
+using Mirror;
 
 // this script starts or stops the network server of the distant display app, and creates a reference to the client object (smartphone app)
 

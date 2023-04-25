@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.Networking;
+using Mirror;
 
 // this script receives the "player name" and touch data from the client (smartphone app) 
 

@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{DCBFE3E3-3C25-565D-A3CE-F03B5C93943D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Pocket6Logic.cs">
+    <Files>
+      <File FileName="Assets/Networking/NetworkIDManager.cs" Line="5" Column="14" />
+      <File FileName="Assets/Networking/NetworkLogic.cs" Line="82" Column="1" />
+      <File FileName="Assets/Mirror/Core/NetworkManager.cs" />
+      <File FileName="Assets/Scripts/Pocket6Logic.cs" Line="19" Column="35" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="46c158b2-0efc-4363-923d-59fa8b15a069" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

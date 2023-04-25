@@ -2,7 +2,7 @@
 using System.Net.Sockets;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Networking;
+using Mirror;
 
 // this script connects or disconnects the client with the server (distant display app)
 
@@ -29,7 +29,7 @@ public class NetworkLogic : MonoBehaviour
 	{
 		labelConnectionInfo.text = "IP of this phone: " + GetLocalIPAddress();
 
-		if (manager.IsClientConnected())
+		if (NetworkClient.isConnected)//manager.IsClientConnected())
 		{
 			if (_foundClient)
 			{
@@ -50,7 +50,7 @@ public class NetworkLogic : MonoBehaviour
 		}
 
 		// gui buttons
-		if (manager.IsClientConnected())
+		if (NetworkClient.isConnected)//manager.IsClientConnected())
 		{
 			_buttonTextStartOrJoin.text = "Disconnect";
 		}
@@ -77,7 +77,7 @@ public class NetworkLogic : MonoBehaviour
 
 	public void StartOrStopNetwork()
 	{
-		if (!manager.IsClientConnected())
+		if (!NetworkClient.isConnected)//!manager.IsClientConnected())
 		{
 			manager.StartClient();
 			GameObject.Find("Pocket6 Logic").GetComponent<Pocket6Logic>().ForceRemapControlSpace();

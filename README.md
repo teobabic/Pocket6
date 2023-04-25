@@ -53,7 +53,7 @@ Automated control space remapping.
 Advanced users, feel free to test various control space sizes and aspect ratios. These settings can be adjusted in the *Pocket6 Logic* game object in the smartphone app project.
 
 ## Compatibility
-The project was made and tested in Unity 2019.1.5f1, Xcode 11.2.1, iPhone X and iOS 13.3.
+The project was made and last tested in Unity 2021.3+, Xcode 14.3, iPhone 13 Pro and iOS 16.4.
 
 System requirements:
 * iPhone with ARKit capabilities
@@ -74,4 +74,4 @@ This work is based on a publication [**"Pocket6: A 6DoF Controller Based On A Si
 
 ------
 
-Copyright (C) 2020 Teo Babic
+Copyright (C) 2023 Teo Babic

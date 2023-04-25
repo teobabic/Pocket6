@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{5E09560D-DA31-6623-3533-24B4F733E291}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Networking/NetworkLogic.cs">
+    <Files>
+      <File FileName="Assets/Networking/NetworkIDManager.cs" Line="2" Column="1" />
+      <File FileName="Assets/Networking/NetworkLogic.cs" Line="11" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bdd54147-4e38-4433-bad7-394272e92463" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.Networking;
+using Mirror;
 
 // this script sends the "player name" and touch data to the server (distant display app) 
 public class NetworkIDManager : NetworkBehaviour
