@@ -61,10 +61,12 @@ System requirements:
 * Xcode
 * Mac or PC
 
-Acknowledgement: we use [SAFullBodyIK](https://github.com/Stereoarts/SAFullBodyIK) to manipulate the humanoid rig.
+## Acknowledgement
+* We use [SAFullBodyIK](https://github.com/Stereoarts/SAFullBodyIK) to manipulate the humanoid rig.
+* The deprecated Unity HLAPI networking was changed to [Mirror](https://github.com/vis2k/Mirror).
 
 ## Improvement ideas
-* The deprecated Unity HLAPI networking can be changed by [Mirror](https://github.com/vis2k/Mirror).
+
 * Improve network lag by using [SmoothSync](https://assetstore.unity.com/packages/tools/network/smooth-sync-96925).
 * Improve input precision by using the [1€ filter](https://github.com/DarioMazzanti/OneEuroFilterUnity).
 * Save the network addresses using the device's internal storage or [Easy Save](https://assetstore.unity.com/packages/tools/input-management/easy-save-the-complete-save-load-asset-768).
